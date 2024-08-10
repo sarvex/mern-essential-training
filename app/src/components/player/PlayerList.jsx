@@ -8,8 +8,8 @@ const PlayerList = (props) => {
         {props.players.map((player) => (
           <a
             href="#!"
-            className="collection-player"
-            key={player.id}
+            className="collection-item"
+            key={player._id}
             onClick={props.updateCurrentPlayer.bind(this, player)}
           >
             {player.firstName} {player.lastName}

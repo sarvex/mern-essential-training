@@ -13,6 +13,8 @@ class App extends React.Component {
       players: [],
       currentPlayer: {},
     }
+
+    this.updateCurrentPlayer = this.updateCurrentPlayer.bind(this)
   }
 
   componentDidMount() {
@@ -37,7 +39,11 @@ class App extends React.Component {
     return (
       <div className="container-fluid">
         <div className="row">
-          <div className="col s12">Menu</div>
+          <div className="nav-wrapper blue darken-1">
+            <a href="/" className="brand-logo">
+              Soccer Management
+            </a>
+          </div>
           <div className="row">
             <div className="col s3">
               <PlayerList
