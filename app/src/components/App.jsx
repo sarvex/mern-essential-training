@@ -39,11 +39,13 @@ class App extends React.Component {
     return (
       <div className="container-fluid">
         <div className="row">
-          <div className="nav-wrapper blue darken-1">
-            <a href="/" className="brand-logo">
-              Soccer Management
-            </a>
-          </div>
+          <nav>
+            <div className="nav-wrapper blue darken-1">
+              <a href="/" className="brand-logo">
+                Soccer Management
+              </a>
+            </div>
+          </nav>
           <div className="row">
             <div className="col s3">
               <PlayerList
